@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loop — a small storefront demo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div>
+      <span class="logo">Loop</span>
+      <p class="tagline">A small storefront — built with plain HTML, CSS and JavaScript.</p>
+    </div>
+    <button class="cart-btn" id="cartBtn" aria-label="Open cart">
+      Cart
+      <span class="cart-count" id="cartCount" hidden>0</span>
+    </button>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="products" id="products" aria-label="Products"></section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">Demo project — front end only, no real payments are processed.</div>
+</footer>
+
+<!-- cart panel -->
+<div class="overlay" id="overlay" hidden></div>
+<aside class="cart-panel" id="cartPanel" aria-label="Shopping cart" hidden>
+  <div class="cart-head">
+    <h2>Your cart</h2>
+    <button class="close-btn" id="closeCart" aria-label="Close cart">×</button>
+  </div>
+
+  <div class="cart-items" id="cartItems"></div>
+  <p class="cart-empty" id="cartEmpty">Your cart is empty.</p>
+
+  <div class="cart-summary">
+    <div class="cart-total-row">
+      <span>Total</span>
+      <span id="cartTotal">GH₵0.00</span>
+    </div>
+    <button class="btn checkout-btn" id="checkoutBtn">Checkout</button>
+  </div>
+</aside>
+
+<div class="toast" id="toast" hidden></div>
+
+<script src="script.js"></script>
+</body>
+</html>

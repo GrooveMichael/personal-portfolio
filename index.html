@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Groove Johnson — Software Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="noise" aria-hidden="true"></div>
+
+<div class="wrap">
+
+  <nav id="nav">
+    <span class="logo">Groove Johnson</span>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">
+        <span class="dot" aria-hidden="true"></span>
+        Open to opportunities
+      </p>
+      <h1 class="reveal">I build small tools that save people a few minutes of their day.</h1>
+      <p class="lede reveal">
+        I'm a <span id="role">software developer</span><span class="cursor" aria-hidden="true">|</span> who works mainly in Python — things like a calculator, scripts that automate the boring parts of a workflow, and the odd browser experiment that teaches me something new.
+      </p>
+      <div class="cta-row reveal">
+        <a class="btn" href="work.html">See my work</a>
+        <a class="btn ghost" href="contact.html">Get in touch</a>
+      </div>
+    </div>
+
+    <div class="hero-photo reveal">
+      <div class="photo-frame" id="photoFrame" tabindex="0" role="button" aria-label="Upload your photo">
+        <img id="photoImg" alt="" hidden>
+        <div class="photo-placeholder" id="photoPlaceholder">
+          <span>+</span>
+          <small>Add photo</small>
+        </div>
+        <button class="photo-remove" id="photoRemove" type="button" hidden aria-label="Remove photo">×</button>
+        <input type="file" id="photoInput" accept="image/*" hidden>
+      </div>
+      <p class="photo-caption">Click the frame to add your photo</p>
+    </div>
+  </header>
+
+  <section id="glance">
+    <div class="section-head">
+      <h2>What I do</h2>
+    </div>
+    <div class="glance-grid">
+      <div class="glance-item">
+        <h3>Build for the web</h3>
+        <p>HTML, CSS, and JavaScript — mostly small, practical sites, like the projects on my <a href="work.html">work page</a>.</p>
+      </div>
+      <div class="glance-item">
+        <h3>Play drums</h3>
+        <p>Outside of code, this is where most of my focus goes. There's a clip of it on my <a href="about.html">about page</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="featured-work">
+    <div class="section-head">
+      <h2>Latest work</h2>
+    </div>
+    <div class="project-window small">
+      <div class="window-bar">
+        <span></span><span></span><span></span>
+        <span class="window-title">todo-app — index.html</span>
+      </div>
+      <div class="window-body">
+        <pre><code>const tasks = JSON.parse(
+  localStorage.getItem("tasks") || "[]"
+);
+
+render(tasks);</code></pre>
+      </div>
+    </div>
+    <p class="home-teaser-text">A to-do list website that saves your tasks between visits, and a small e-commerce site with a working cart and running total. <a href="work.html">See the full write-ups →</a></p>
+  </section>
+
+  <section id="home-about">
+    <div class="section-head">
+      <h2>About</h2>
+    </div>
+    <p class="pull">"Do unto others what you want others to do unto you."</p>
+    <p class="home-teaser-text">I'm an aspiring software engineer who enjoys learning new things, solving problems, and growing a little more each day. <a href="about.html">Read more →</a></p>
+  </section>
+
+  <section id="home-contact">
+    <div class="section-head">
+      <h2>Let's talk</h2>
+    </div>
+    <p class="home-teaser-text">Got an opportunity, a bug that needs fixing, or an idea worth building? <a href="contact.html">Get in touch →</a></p>
+  </section>
+
+  <footer>© 2026 Groove Johnson</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

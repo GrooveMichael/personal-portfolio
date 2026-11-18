@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Listed — a small to-do app demo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrap">
+  <header class="app-header">
+    <span class="logo">Listed</span>
+    <p class="tagline">A small to-do list — built with plain HTML, CSS and JavaScript.</p>
+  </header>
+
+  <main class="app-card">
+    <form id="addForm" class="add-row">
+      <input type="text" id="taskInput" placeholder="Add a task…" autocomplete="off" aria-label="New task">
+      <button type="submit" class="add-btn">Add</button>
+    </form>
+
+    <ul class="task-list" id="taskList"></ul>
+    <p class="empty-state" id="emptyState">Nothing here yet — add your first task above.</p>
+
+    <div class="list-footer">
+      <span id="remainingCount">0 tasks left</span>
+      <button type="button" id="clearCompleted" class="clear-btn" hidden>Clear completed</button>
+    </div>
+  </main>
+
+  <footer class="site-footer">Demo project — tasks are stored in your browser only.</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

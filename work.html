@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Work — Groove Johnson</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="noise" aria-hidden="true"></div>
+
+<div class="wrap">
+
+  <nav id="nav">
+    <span class="logo">Groove Johnson</span>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="work.html" class="active">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <section id="work">
+    <div class="section-head">
+      <h2>Work</h2>
+      <p class="section-sub">A few things I've built, start to finish.</p>
+    </div>
+
+    <article class="project">
+      <div class="project-window">
+        <div class="window-bar">
+          <span></span><span></span><span></span>
+          <span class="window-title">todo-app — index.html</span>
+        </div>
+        <div class="window-body">
+          <pre><code>const tasks = JSON.parse(
+  localStorage.getItem("tasks") || "[]"
+);
+
+render(tasks);
+updateCounter(tasks);</code></pre>
+        </div>
+      </div>
+      <div class="project-info">
+        <h3>To-Do List Website</h3>
+        <p>A to-do app built without any frameworks. It handles input, updates the list instantly as tasks change, and keeps everything between visits using <code>localStorage</code> — with a running count of what's left to do.</p>
+        <p class="stack">HTML · CSS · JavaScript · localStorage</p>
+        <div class="project-links">
+          <a href="todo/index.html">View live demo →</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project-window">
+        <div class="window-bar">
+          <span></span><span></span><span></span>
+          <span class="window-title">shop — cart.js</span>
+        </div>
+        <div class="window-body">
+          <pre><code>function addToCart(product) {
+  cart.push(product);
+  renderCart(cart);
+  updateTotal(cart);
+}</code></pre>
+        </div>
+      </div>
+      <div class="project-info">
+        <h3>E-Commerce Website</h3>
+        <p>A small storefront with a product grid, a cart that updates as you add or remove items, and a running total — all handled on the front end, no backend involved.</p>
+        <p class="stack">HTML · CSS · JavaScript</p>
+        <div class="project-links">
+          <a href="ecommerce/index.html">View live demo →</a>
+        </div>
+      </div>
+    </article>
+
+    <p class="project-note">More projects going up here as I finish them.</p>
+  </section>
+
+  <footer>© 2026 Groove Johnson</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
